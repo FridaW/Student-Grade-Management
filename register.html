@@ -1,0 +1,46 @@
+
+    <div class="row " ng-controller="registerCtrl">
+        <h2>Please Sign Up</h2>
+        <div class="col-md-10" style="background-color:lavender;">
+            <form name="myForm" ng-submit="register()">
+                <label class="col-md-2 control-label">name：</label>
+                <div class="col-md-9">
+                    <input type="text" class="form-control" placeholder="name" ng-model="name">
+                </div>
+                <div class="form-group">
+                    <label class="col-md-2 control-label">username：</label>
+                    <div class="col-md-9">
+                       <input type="text" class="form-control" placeholder="username" ng-model="username">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-2 control-label">password：</label>
+                    <div class="col-md-9">
+                       <input type="text" class="form-control" placeholder="password" ng-model="password">
+                    </div>
+                    </div>
+                <div class="form-group">
+                    <label class="col-md-2 control-label">location：</label>
+                    <div class="col-md-9">
+                        <input type="text" class="form-control" placeholder="location" ng-model="location">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-2 control-label">phone：</label>
+                    <div class="col-md-9">
+                        <input type="text" class="form-control" placeholder="phone" ng-model="phone">
+                    </div>
+                </div>
+                 <div class="form-group">
+                    <label class="col-md-2 control-label">email：</label>
+                    <div class="col-md-9">
+                        <input type="email" class="form-control" placeholder="email" ng-model="email">
+                    </div>
+                </div>
+                
+                <button type="submit">Update</button>
+                {{errmes}}
+            </form>
+
+        </div>
+    </div>

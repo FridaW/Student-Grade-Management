@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<h2>Log In Please!</h2>
+ <div id="log"></div>
+ 
+           <div class="container">
+           <div class="col-md-3" style="background-color:lavender;" ng-controller="loginCtrl">
+               <form class="myForm" ng-submit ="login_check()">
+                  <div class="form-group" id="form_1" >
+                    
+                    <div class="col-md-9">
+                    <label class="label_2">Username:</label><br/>
+                    <input type="text" placeholder="Enter user name"  ng-model="username" required /><br/><br/>
+                    </div>
+                    </div>
+                  <div class="form-group" id="form_2">
+                  <div class="col-md-9">
+                    <label class="label_2">Password:</label><br/>                                         
+                    <input type="password" placeholder="Enter password"  ng-model="password" required /><br/><br/>
+                  <div class="col-md-9">
+                  </div>               
+                    <input type="submit" value="Log in" />
+                    <button><a href="#/register">Register</a></button>
+                     {{errmes}}
+               </form>        
+            </div>   
+            </div>
+        

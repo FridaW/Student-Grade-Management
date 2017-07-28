@@ -1,0 +1,54 @@
+<nav class="nav nav-pills nav-justified">
+    <ul class="nav nav-pills nav-justified">
+        <li class="active"><a data-toggle="tab" href="#/home">Home</a></li>
+        <li><a data-toggle="tab" href="#/addStu">Add Student</a></li>
+        <li><a data-toggle="tab" href="#/manageStu">Manage Student</a></li>
+        <li><a data-toggle="tab" href="#/logout">Log Out</a></li>
+    </ul>
+</nav>  
+  
+<h2>Show The Details</h2>
+    <div class="row " ng-controller="managestuCtrl">
+        <div class="col-md-5" style="background-color:lavender;">
+            <form class="form-horizontal" role="form" name="form">
+                    <div class="form-group">
+                        <label class="col-md-2 ">Select Class：</label>
+                        <div class="col-md-10">
+                            <select ng-model="select_classes" ng-options="class for class in classes" ng-change = "classChange()" ></select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-2 ">Student Name： </label>
+                        <div class="col-md-10">
+                            <select ng-model="select_names" ng-options="name for name in names" ng-change = "nameChange()"></select>
+                        </div>
+                    </div>                  
+                    <div class="form-group">
+                        <label class="col-md-2 " >Course1： </label>
+                        <div class="col-md-10" ng-model = "score1">
+                            {{score1}}
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-2 " >Course2：</label>
+                        <div class="col-md-10" ng-model = "score2">
+                            {{score2}}
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-2 " >Course3：</label>
+                        <div class="col-md-10" ng-model = "score3">
+                            {{score3}}
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-2 " >Average Score：</label>
+                        <div class="col-md-10" ng-model = "average">
+                            {{average}}
+                        </div>
+                    </div>
+                    
+                </form>
+        </div>
+       
+    </div>
